@@ -1,0 +1,11 @@
+---
+version: '3.6'
+
+services:
+  web:
+    image: pdflib
+    environment:
+      APP_ENV: local
+    ports:
+      - '8080:8080'
+    restart: unless-stopped
